@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+}
+
+.calculator {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    width: 320px;
+    transition: transform 0.3s ease;
+}
+
+.calculator:hover {
+    transform: scale(1.02);
+}
+
+.display {
+    width: 100%;
+    height: 60px;
+    background: #222;
+    color: #0f0;
+    border: none;
+    border-radius: 8px;
+    text-align: right;
+    font-size: 2em;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.button {
+    height: 55px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.3em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.button.clear {
+    background: #e74c3c;
+}
+
+.button.clear:hover {
+    background: #c0392b;
+}
+
+.button.operator {
+    background: #f39c12;
+}
+
+.button.operator:hover {
+    background: #d35400;
+}
+
+.button.equals {
+    background: #2ecc71;
+    grid-column: span 2;
+}
+
+.button.equals:hover {
+    background: #27ae60;
+}
